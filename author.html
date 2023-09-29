@@ -25,13 +25,10 @@
     
     var good = 0;
     var oops = 0;
-
     function checkAuthor() {
        
         var secretAuthor = document.getElementById("secretAuthor").value;
         var guessAuthor = document.getElementById("guessAuthor").value;
-        
-        
         if (secretAuthor === guessAuthor) {
             good++; 
             alert("You got it right!");
