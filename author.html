@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Journey</title>
+    </head>
+ 
+<body>
+
+<h1>Author Entry - Shabna Shaik</h1>
+
+<form>    
+            <label for="secretAuthor">The hidden author name:</label>
+            <input type="password" id="secretAuthor" name="secretAuthor" value="Dickens"><br>
+    
+            
+            <label for="guessAuthor">Guess the author:</label>
+            <input type="text" id="guessAuthor" name="guessAuthor"><br>
+
+            <button type="button" onclick="checkAuthor()">Check the guess</button><br>
+</form>
+
+<p id="result">Good: 0 | Oops: 0</p>
+
+<script>
+    
+    var good = 0;
+    var oops = 0;
+
+    function checkAuthor() {
+       
+        var secretAuthor = document.getElementById("secretAuthor").value;
+        var guessAuthor = document.getElementById("guessAuthor").value;
+        
+        
+        if (secretAuthor === guessAuthor) {
+            good++; 
+            alert("You got it right!");
+        } else {
+            oops++; 
+            alert("Sorry");
+        }
+        
+        
+        var resultElement = document.getElementById("result");
+        resultElement.innerHTML = "Good: " + good + " | Oops: " + oops;
+    }
+</script>
+
+</body>
+</html> 
