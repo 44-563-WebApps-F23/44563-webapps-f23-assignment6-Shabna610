@@ -2,18 +2,14 @@
 <html>
     <head>
         <title>Cruise Options</title>
-    </head>
- 
+    </head> 
 <body>
-
 <h1>Shabna goes on a cruise</h1>
-
 <form>
     <label><input type="checkbox" id="sharesCabin" value="True"> Shares Cabin</label><br>
     <label><input type="checkbox" id="breakfast" value="True"> Breakfast</label><br>
     <label><input type="checkbox" id="poolPass" value="False"> Pool Pass</label><br>
 </form>
-
 <button onclick="selectCruise()">Select a cruise</button>
 <p id="cruiseResults"></p>
 <script>
@@ -27,10 +23,22 @@
 
     document.getElementById("cruiseResults").innerHTML = JSON.stringify(my_cruise, null, 2);
 }
-
 </script>
-
-
-
+<form>
+    <label for="numberOfDays">Enter the number of days:</label>
+    <input type="text" id="numberOfDays" value="7"><br>
+    <label for="cruisePrice">Enter price:</label>
+    <input type="text" id="cruisePrice" value="1000"><br>
+    <button onclick="updateCruise()">Update the cruise</button>
+</form>
+<script>
+    function updateCruise() {
+    var numberOfDays = document.getElementById("numberOfDays").value;
+    var cruisePrice = document.getElementById("cruisePrice").value;
+    my_cruise.days = numberOfDays;
+    my_cruise.price = cruisePrice;
+    document.getElementById("cruiseResults").innerHTML = JSON.stringify(my_cruise, null, 2);
+}
+</script>
 </body>
 </html> 
