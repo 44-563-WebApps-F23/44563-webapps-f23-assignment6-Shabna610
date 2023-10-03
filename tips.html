@@ -39,9 +39,12 @@
 </script>
 
 <form>
-    <label><input type="radio" name="operation" value="sum" onclick="chooseOp()"> Sum</label>
-    <label><input type="radio" name="operation" value="difference" onclick="chooseOp()"> Difference</label>
-    <label><input type="radio" name="operation" value="product" onclick="chooseOp()"> Product</label>
+    <label><input type="radio" name="operation" value="sum" onclick="chooseOp()"> 
+        Sum</label>
+    <label><input type="radio" name="operation" value="difference" onclick="chooseOp()">
+         Difference</label>
+    <label><input type="radio" name="operation" value="product" onclick="chooseOp()"> 
+        Product</label>
 </form>
 
 <p id="calculationResults"></p>
@@ -67,7 +70,8 @@
             break;
     }
 
-    document.getElementById("calculationResults").innerHTML = `${operation} of ${baseAmount} and ${tipPercentage} is ${result}`;
+    document.getElementById("calculationResults").innerHTML = `${operation} of 
+    ${baseAmount} and ${tipPercentage} is ${result}`;
 }
 
 </script>
