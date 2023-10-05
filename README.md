@@ -3,7 +3,7 @@
 Introduction to Java Script and DOM
 
 Hosted at:
-- [Author Page]()
-- [Tips Page]()
-- [Cruise Page]()
+- [Author Page](https://44-563-webapps-f23.github.io/44563-webapps-f23-assignment6-Shabna610/author.html)
+- [Tips Page](https://44-563-webapps-f23.github.io/44563-webapps-f23-assignment6-Shabna610/tips.html)
+- [Cruise Page](https://44-563-webapps-f23.github.io/44563-webapps-f23-assignment6-Shabna610/cruise.html)
 
